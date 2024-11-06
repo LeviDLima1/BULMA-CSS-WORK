@@ -20,7 +20,8 @@
 
         <!-- INICIO DOS CARDS -->
 
-        <section class="box has-background-white is-flex is-flex-direction-column">
+        <section class="box has-background-white is-flex is-flex-direction-column"
+        id="Main">
             <div class="is-flex pb-6">
                 <div class="has-background-success is-fullwidth has-text-success">-</div>
                 <div class="hero is-shadowless">
@@ -40,7 +41,8 @@
                 
                 <div class="modal openModal"
                 id="modal1">
-                    <div class="modal-background"></div>
+                    <div class="modal-background"
+                    id="OutlineModal"></div>
                     <div class="modal-card">
                         <header class="modal-card-head has-background-light">
                             <div class="has-background-success has-text-success">-</div>
@@ -52,7 +54,7 @@
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">
                             
-                            <button class="button is-success has-text-white">Fechar</button>
+                            <button class="button is-success has-text-white" id="closeBnt1">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -94,7 +96,7 @@
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">
                             
-                            <button class="button is-info has-text-white">Fechar</button>
+                            <button class="button is-info has-text-white" id="closeBnt2">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -135,7 +137,7 @@
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
-                                <button class="button is-warning has-text-white">Fechar</button>
+                                <button class="button is-warning has-text-white" id="closeBnt3">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -176,7 +178,7 @@
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
-                                <button class="button is-danger has-text-white">Fechar</button>
+                                <button class="button is-danger has-text-white" id="closeBnt4">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -218,7 +220,8 @@
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
-                                <button class="button is-link-light has-text-white">Fechar</button>
+                                <button class="button has-background-link-light has-text-white" id="closeBnt5"
+                                style="border: none;">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -248,7 +251,7 @@
                 <!-- MODAL MEMBRO 6 -->
 
                 <div class="modal openModal"
-                id="modal5">
+                id="modal6">
                     <div class="modal-background"></div>
                     <div class="modal-card">
                         <header class="modal-card-head has-background-light">
@@ -260,7 +263,7 @@
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
-                                <button class="button is-link has-text-white">Fechar</button>
+                                <button class="button is-link has-text-white" id="closeBnt6">Fechar</button>
                             </div>
                         </footer>
                     </div>
@@ -271,7 +274,19 @@
         </section>
     </main>
 
-    
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+            The source code is licensed
+            <a href="https://opensource.org/license/mit">MIT</a>. The
+            website content is licensed
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+              >CC BY NC SA 4.0</a
+            >.
+          </p>
+        </div>
+      </footer>
 
 
       <script src="src/js/index.js"></script>
