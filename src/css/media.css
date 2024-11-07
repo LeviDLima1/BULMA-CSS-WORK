@@ -1,0 +1,12 @@
+@media screen and (min-width: 1024px) {
+    .main {
+        align-items: center;
+        .desktop-introduction {
+            width: 50%;
+        }
+    }
+    
+    .section-main {
+        width: 50%;
+    }
+}
