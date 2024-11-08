@@ -9,4 +9,19 @@
     .section-main {
         width: 50%;
     }
+    
+    .git-contain {
+        display: flex;
+        justify-content: center !important;
+        gap: 50px;
+    }
+}
+
+.git-contain {
+    
+    img {
+        border: none;
+        border-radius: 100%;
+    }
+    
 }

@@ -18,7 +18,7 @@
             <!-- TEXT BOX -->
             <div class="is-flex is-flex-direction-column p-5">
                 <h1 class="title is-size-3 has-text-weight-light has-text-black has-text-centered is-size-1-desktop">Explorando o Bulma CSS Framework</h1>
-                <h1 class="title is-size-4 has-text-weight-bold has-text-black has-text-centered has-text-grey-dark">Uma Abordagem Moderna para Design Web Responsivo</h1>
+                <h1 class="title is-size-5 is-size-4-desktop has-text-weight-bold has-text-black has-text-centered has-text-grey-dark">Uma Abordagem Moderna para Design Web Responsivo</h1>
                 <p class="has-text-justified has-text-grey-dark is-size-5-desktop">O Bulma é um framework CSS leve e flexível que oferece uma maneira eficiente de criar layouts responsivos e esteticamente agradáveis. Utilizando uma abordagem baseada em classes, o Bulma permite que desenvolvedores e designers construam interfaces de usuário de forma rápida e intuitiva. Nesta apresentação, nossa equipe irá explorar os principais componentes do Bulma, incluindo a implementação do framework, o sistema de grid, botões, formulários, cartões e modais. Através de demonstrações práticas, vamos mostrar como o Bulma pode transformar seu fluxo de trabalho e melhorar a experiência do usuário em suas aplicações web.</p>
             </div>
         </section>
@@ -273,7 +273,50 @@
                             <p class="modal-card-title has-text-grey-dark pl-5">Modal title</p>
                         </header>
                         <section class="modal-card-body has-background-white">
-                            <!-- Content ... -->
+                            <h2 class="subtitle">Botões Primários e Secundários</h2>
+                            <p>O Bulma oferece botões prontos com estilos variados, como botões primários e secundários, que podem ser definidos usando as classes <code>is-primary</code> e <code>is-secondary</code>:</p>
+                            <div class="buttons">
+                                <button class="button is-primary">Botão Primário</button>
+                                <button class="button is-link">Botão Secundário</button>
+                            </div>
+                            
+                            <!-- Subtítulo 2: Tamanhos de Botões -->
+                            <h2 class="subtitle">Tamanhos de Botões</h2>
+                            <p>Os botões podem ser redimensionados usando as classes <code>is-small</code>, <code>is-normal</code>, <code>is-medium</code> e <code>is-large</code>:</p>
+                            <div class="buttons">
+                                <button class="button is-small is-primary">Pequeno</button>
+                                <button class="button is-primary">Normal</button>
+                                <button class="button is-medium is-primary">Médio</button>
+                                <button class="button is-large is-primary">Grande</button>
+                            </div>
+                            
+                            <!-- Subtítulo 3: Botões com Ícones -->
+                            <h2 class="subtitle">Botões com Ícones</h2>
+                            <p>É possível adicionar ícones aos botões para melhorar a experiência do usuário. Aqui está um exemplo com a classe <code>icon</code>:</p>
+                            <div class="buttons">
+                                <button class="button is-primary">
+                                <span class="icon">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>Confirmar</span>
+                                </button>
+                                <button class="button is-danger">
+                                <span class="icon">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                                <span>Cancelar</span>
+                                </button>
+                            </div>
+                            
+                            <!-- Subtítulo 4: Botões de Cores e Estados -->
+                            <h2 class="subtitle">Botões de Cores e Estados</h2>
+                            <p>O Bulma permite várias cores de botão, como <code>is-success</code>, <code>is-danger</code>, e <code>is-warning</code>, além de estados como <code>is-loading</code>:</p>
+                            <div class="buttons">
+                                <button class="button is-success">Sucesso</button>
+                                <button class="button is-danger">Erro</button>
+                                <button class="button is-warning">Aviso</button>
+                                <button class="button is-info is-loading">Carregando</button>
+                            </div>
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
@@ -446,7 +489,67 @@
                             <p class="modal-card-title has-text-grey-dark pl-5">Modal title</p>
                         </header>
                         <section class="modal-card-body has-background-white">
-                            <!-- Content ... -->
+                            <!-- Subtítulo 1: Estrutura Básica de um Cartão -->
+                              <h2 class="subtitle">Estrutura Básica de um Cartão</h2>
+                              <p>O Bulma oferece um componente de cartão que é muito fácil de usar. A estrutura básica inclui <code>card</code>, <code>card-content</code> e <code>card-footer</code> para separar o conteúdo e as ações:</p>
+                              <div class="card">
+                                <div class="card-content">
+                                  <p class="title">Título do Cartão</p>
+                                  <p class="content">Este é o conteúdo principal do cartão.</p>
+                                </div>
+                                <footer class="card-footer">
+                                  <p class="card-footer-item">Ação 1</p>
+                                  <p class="card-footer-item">Ação 2</p>
+                                </footer>
+                              </div>
+                              
+                              <!-- Subtítulo 2: Cartão com Imagem -->
+                              <h2 class="subtitle">Cartão com Imagem</h2>
+                              <p>É possível adicionar uma imagem ao cartão para dar destaque visual. A classe <code>card-image</code> permite incluir uma imagem na parte superior:</p>
+                              <div class="card">
+                                <div class="card-image">
+                                  <figure class="image is-4by3">
+                                    <img src="https://via.placeholder.com/300x225" alt="Imagem do Cartão">
+                                  </figure>
+                                </div>
+                                <div class="card-content">
+                                  <p class="title">Cartão com Imagem</p>
+                                  <p class="content">Esse cartão inclui uma imagem como destaque visual.</p>
+                                </div>
+                              </div>
+                              
+                              <!-- Subtítulo 3: Cartão com Ícones de Ação -->
+                              <h2 class="subtitle">Cartão com Ícones de Ação</h2>
+                              <p>O Bulma permite incluir ícones nas ações do cartão usando a classe <code>icon</code>. Aqui está um exemplo com ícones para facilitar a interação do usuário:</p>
+                              <div class="card">
+                                <div class="card-content">
+                                  <p class="title">Cartão com Ações</p>
+                                  <p class="content">Este cartão possui ícones no rodapé para ações rápidas.</p>
+                                </div>
+                                <footer class="card-footer">
+                                  <a href="#" class="card-footer-item">
+                                    <span class="icon"><i class="fas fa-thumbs-up"></i></span> Like
+                                  </a>
+                                  <a href="#" class="card-footer-item">
+                                    <span class="icon"><i class="fas fa-share"></i></span> Share
+                                  </a>
+                                </footer>
+                              </div>
+                              
+                              <!-- Subtítulo 4: Cartão Responsivo -->
+                              <h2 class="subtitle">Cartão Responsivo</h2>
+                              <p>Os cartões do Bulma são naturalmente responsivos, mas você pode personalizar o tamanho das imagens e do conteúdo para se ajustar a diferentes dispositivos. Por exemplo:</p>
+                              <div class="card is-mobile">
+                                <div class="card-image">
+                                  <figure class="image is-16by9">
+                                    <img src="https://via.placeholder.com/300x169" alt="Imagem Responsiva">
+                                  </figure>
+                                </div>
+                                <div class="card-content">
+                                  <p class="title">Cartão Responsivo</p>
+                                  <p class="content">Este cartão ajusta sua imagem para dispositivos menores.</p>
+                                </div>
+                              </div>
                         </section>
                         <footer class="modal-card-foot has-background-white">
                             <div class="buttons">                  
@@ -466,15 +569,15 @@
 
     <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-            The source code is licensed
-            <a href="https://opensource.org/license/mit">MIT</a>. The
-            website content is licensed
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
-              >CC BY NC SA 4.0</a
-            >.
-          </p>
+          <div>
+            <h1 class="is-size-4 is-size-3-desktop">PARTICIPANTES</h1>
+          </div>
+          <div class="box container is-flex is-justify-content-space-around git-contain">
+            <a href="" class="git-levi"><img src="src/assets/footer/Levi.jpg" alt="" class="image is-64x64"></a>
+            <a href="" class="git-nobrega"><img src="src/assets/footer/Nóbrega.jpeg" alt="" class="image is-64x64"></a>
+            <a href="" class="git-everton"><img src="src/assets/footer/Everton.jpeg" alt="" class="image is-64x64"></a>
+            <a href="" class="git-gustavo"><img src="src/assets/footer/Gustavo.jpeg" alt="" class="image is-64x64"></a>
+          </div>
         </div>
       </footer>
       <script src="src/js/index.js"></script>
