@@ -3,14 +3,14 @@ const activeButton2 = document.getElementById("activeButton2")
 const activeButton3 = document.getElementById("activeButton3")
 const activeButton4 = document.getElementById("activeButton4")
 const activeButton5 = document.getElementById("activeButton5")
-const activeButton6 = document.getElementById("activeButton6")
+
 
 const closeBnt1 = document.getElementById("closeBnt1")
 const closeBnt2 = document.getElementById("closeBnt2")
 const closeBnt3 = document.getElementById("closeBnt3")
 const closeBnt4 = document.getElementById("closeBnt4")
 const closeBnt5 = document.getElementById("closeBnt5")
-const closeBnt6 = document.getElementById("closeBnt6")
+
 
 const OutlineModal = document.getElementById("OutlineModal")
 
@@ -19,7 +19,7 @@ const modal2 = document.getElementById("modal2")
 const modal3 = document.getElementById("modal3")
 const modal4 = document.getElementById("modal4")
 const modal5 = document.getElementById("modal5")
-const modal6 = document.getElementById("modal6")
+
 
 
 const openModal = document.getElementsByClassName("openModal")
@@ -47,9 +47,7 @@ activeButton5.onclick = function() {
     modal5.style.display = 'flex'
 }
 
-activeButton6.onclick = function() {
-    modal6.style.display = 'flex'
-}
+
 
 
 
@@ -69,9 +67,6 @@ closeBnt4.onclick = function() {
 closeBnt5.onclick = function() {
     modal5.style.display = 'none'
 }
-closeBnt6.onclick = function() {
-    modal6.style.display = 'none'
-}
 
 
 
@@ -92,9 +87,6 @@ OutlineModal.onclick = function() {
 }
 OutlineModal.onclick = function() {
     modal5.style.display = 'none'
-}
-OutlineModal.onclick = function() {
-    modal6.style.display = 'none'
 }
 
 
