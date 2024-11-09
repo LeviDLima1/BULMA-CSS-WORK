@@ -1,585 +1,608 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="src/css/media.css">
-    <title>Digital College - Bulma CSS FrameWork</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="src/css/media.css">
+  <title>Digital College - Bulma CSS FrameWork</title>
 </head>
 
 <body class="has-background-light is-fullheight">
-    <main class="hero is-small p-5 is-flex is-flex-direction-column
+  <main class="hero is-small p-5 is-flex is-flex-direction-column
     
     main">
-        <section class="hero-body box has-background-white is-flex pb-6
+    <section class="hero-body box has-background-white is-flex pb-6
         
         desktop-introduction">
-            <!-- TEXT BOX -->
-            <div class="is-flex is-flex-direction-column p-5">
-                <h1 class="title is-size-3 has-text-weight-light has-text-black has-text-centered is-size-1-desktop">Explorando o Bulma CSS Framework</h1>
-                <h1 class="title is-size-5 is-size-4-desktop has-text-weight-bold has-text-black has-text-centered has-text-grey-dark">Uma Abordagem Moderna para Design Web Responsivo</h1>
-                <p class="has-text-justified has-text-grey-dark is-size-5-desktop">O Bulma é um framework CSS leve e flexível que oferece uma maneira eficiente de criar layouts responsivos e esteticamente agradáveis. Utilizando uma abordagem baseada em classes, o Bulma permite que desenvolvedores e designers construam interfaces de usuário de forma rápida e intuitiva. Nesta apresentação, nossa equipe irá explorar os principais componentes do Bulma, incluindo a implementação do framework, o sistema de grid, botões, formulários, cartões e modais. Através de demonstrações práticas, vamos mostrar como o Bulma pode transformar seu fluxo de trabalho e melhorar a experiência do usuário em suas aplicações web.</p>
+      <!-- TEXT BOX -->
+      <div class="is-flex is-flex-direction-column p-5">
+        <h1 class="title is-size-3 has-text-weight-light has-text-black has-text-centered is-size-1-desktop">Explorando
+          o Bulma CSS Framework</h1>
+        <h1
+          class="title is-size-5 is-size-4-desktop has-text-weight-bold has-text-black has-text-centered has-text-grey-dark">
+          Uma Abordagem Moderna para Design Web Responsivo</h1>
+        <p class="has-text-justified has-text-grey-dark is-size-5-desktop">O Bulma é um framework CSS leve e flexível
+          que oferece uma maneira eficiente de criar layouts responsivos e esteticamente agradáveis. Utilizando uma
+          abordagem baseada em classes, o Bulma permite que desenvolvedores e designers construam interfaces de usuário
+          de forma rápida e intuitiva. Nesta apresentação, nossa equipe irá explorar os principais componentes do Bulma,
+          incluindo a implementação do framework, o sistema de grid, botões, formulários, cartões e modais. Através de
+          demonstrações práticas, vamos mostrar como o Bulma pode transformar seu fluxo de trabalho e melhorar a
+          experiência do usuário em suas aplicações web.</p>
+      </div>
+    </section>
+
+    <!-- INICIO DOS CARDS -->
+
+    <section class="hero-body box has-background-white is-flex is-flex-direction-column section-main" id="Main">
+
+      <!-- CODIGO - LEVI -->
+
+      <div class="is-flex pb-6 ">
+        <div class="animate-left is-flex">
+          <div class="has-background-success is-fullwidth has-text-success">-</div>
+          <div class="hero is-shadowless">
+            <div class="hero-body is-flex is-flex-direction-column">
+              <h1 class="title is-4 has-text-left has-text-grey-darker">Implementação do Bulma CSS</h1>
+              <p class="has-text-grey-dark is-size-5-desktop">O Bulma é uma biblioteca CSS leve e responsiva, fácil de
+                integrar em projetos web. Pode ser instalada via CDN ou npm. Com uma estrutura baseada em classes CSS, o
+                Bulma permite a criação de layouts responsivos e bonitos com pouco esforço, facilitando a customização sem
+                exigir conhecimentos avançados em design.</p>
             </div>
-        </section>
-
-        <!-- INICIO DOS CARDS -->
-
-        <section class="hero-body box has-background-white is-flex is-flex-direction-column section-main"
-        id="Main">
-            
-        <!-- CODIGO - LEVI -->
-        
-            <div class="is-flex pb-6">
-                <div class="has-background-success is-fullwidth has-text-success">-</div>
-                <div class="hero is-shadowless">
-                    <div class="hero-body is-flex is-flex-direction-column">
-                        <h1 class="title is-4 has-text-left has-text-grey-darker">Implementação do Bulma CSS</h1>
-                        <p class="has-text-grey-dark is-size-5-desktop">O Bulma é uma biblioteca CSS leve e responsiva, fácil de integrar em projetos web. Pode ser instalada via CDN ou npm. Com uma estrutura baseada em classes CSS, o Bulma permite a criação de layouts responsivos e bonitos com pouco esforço, facilitando a customização sem exigir conhecimentos avançados em design.</p>
-                    </div>
-                    <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
-                        <button class="button is-success has-text-white"
-                        id="activeButton1">Leia Mais</button>
-                        <img src="src/assets/Logo-Bulma.png" alt=""
-                        class="image is-64x64">
-                    </div>
-                </div>
-
-                <!-- MODAL MEBRO 1 -->
-                
-                <div class="modal openModal"
-                id="modal1">
-                    <div class="modal-background"
-                    id="OutlineModal"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head has-background-light">
-                            <div class="has-background-success has-text-success">-</div>
-                            <p class="modal-card-title has-text-grey-dark has-text-weight-bold pl-5 is-size-5">Implementação do Bulma CSS</p>
-                        </header>
-                        <section class="modal-card-body has-background-white">
-                            <div class="">
-                                <div class="pb-4">
-                                    <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Como Instalar o Bulma via CDN</h2>
-                                    <p class="has-text-grey-dark has-text-justified">A maneira mais rápida de usar o Bulma é através de um link CDN. Basta adicionar o link no <head> do HTML, e as classes do Bulma ficam disponíveis. Ideal para projetos simples e testes rápidos. Exemplo:</p>
-                                </div>
-                                <div class="pb-4">
-                                    <article class="message is-dark">
-                                        <div class="message-header">
-                                          <p>Instalação via LINK</p>
-                                          <button class="delete" aria-label="delete"></button>
-                                        </div>
-                                        <div class="message-body is-flex is-justify-content-center">
-                                          <p>
-                                            <img src="src/assets/modal1/link-install.png" alt="">
-                                          </p>
-                                        </div>
-                                      </article>
-                                </div>
-
-                                <div class="py-5 is-fullwidth is-flex">
-                                    <span style="border: ridge 1px lightgray; width: 100%;"></span>
-                                </div>
-
-                                <div class="pb-4">
-                                    <div class="pb-4">
-                                        <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Instalando o Bulma via npm</h2>
-                                        <p class="has-text-grey-dark has-text-justified">Para projetos maiores, instalar o Bulma com npm permite gerenciar dependências e facilita atualizações. Use o comando abaixo no terminal para instalar:</p>
-                                    </div>
-                                    <article class="message is-dark">
-                                        <div class="message-header">
-                                          <p>Instalação via NPM</p>
-                                          <button class="delete" aria-label="delete"></button>
-                                        </div>
-                                        <div class="message-body is-flex is-justify-content-center">
-                                          <p>
-                                            <img src="src/assets/modal1/npm-install.png" alt="">
-                                          </p>
-                                        </div>
-                                      </article>
-                                </div>
-
-                                <div class="py-5 is-fullwidth is-flex">
-                                    <span style="border: ridge 1px lightgray; width: 100%;"></span>
-                                </div>
-
-                                <div class="pb-4">
-                                    <div class="pb-4">
-                                        <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Estrutura Básica de um Projeto com Bulma</h2>
-                                        <p class="has-text-grey-dark has-text-justified">Após a instalação, você pode aplicar as classes do Bulma diretamente nos elementos HTML para estilização rápida. Por exemplo, uma navbar básica pode ser criada assim:</p>
-                                    </div>
-                                    <article class="message is-dark">
-                                        <div class="message-header">
-                                          <p>Classificação</p>
-                                          <button class="delete" aria-label="delete"></button>
-                                        </div>
-                                        <div class="message-body is-flex is-justify-content-center">
-                                          <p>
-                                            <img src="src/assets/modal1/Estrutura-Basica.png" alt="">
-                                          </p>
-                                        </div>
-                                      </article>
-                                </div>
-
-                                <div class="py-5 is-fullwidth is-flex">
-                                    <span style="border: ridge 1px lightgray; width: 100%;"></span>
-                                </div>
-                                
-                                <div class="pb-4">
-                                    <div class="pb-4">
-                                        <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Estrutura de Pastas ao Usar Bulma com npm</h2>
-                                        <p class="has-text-grey-dark has-text-justified">Ao usar Bulma com npm, organize o projeto em pastas, como css ou sass, para manter os arquivos do Bulma e os estilos personalizados juntos. Isso torna o código mais organizado e facilita futuras modificações.</p>
-                                    </div>
-                                </div>
-
-                                <div class="py-5 is-fullwidth is-flex">
-                                    <span style="border: ridge 1px lightgray; width: 100%;"></span>
-                                </div>
-
-                                <div class="hero is-flex">
-                                    <div class="hero-body is-flex">
-                                        <img src="src/assets/modal1/carrocho.gif" alt="" style="width: 33.333%;">
-                                        <img src="src/assets/modal1/eslequeto.gif" alt="" style="width: 33.333%;">
-                                        <img src="src/assets/modal1/carrocho2.gif" alt="" style="width: 33.333%;">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        <footer class="modal-card-foot has-background-white">
-                            <div class="buttons">
-                            
-                            <button class="button is-success has-text-white" id="closeBnt1">Fechar</button>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
+            <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
+              <button class="button is-success has-text-white" id="activeButton1">Leia Mais</button>
+              <img src="src/assets/Logo-Bulma.png" alt="" class="image is-64x64">
             </div>
-
-            <div class="pb-6 is-fullwidth is-flex">
-                <span style="border: ridge 1px lightgray; width: 100%;"></span>
-            </div>
-
-            <!-- CODIGO - EVERTON -->
-
-            <div class="is-flex pb-6">
-                <div class="has-background-info is-fullwidth has-text-info">-</div>
-                <div class="hero is-shadowless">
-                    <div class="hero-body is-flex is-flex-direction-column">
-                        <h1 class="title is-4 has-text-left has-text-grey-darker">Sistema de Grid</h1>
-                        <p class="has-text-grey-dark is-size-5-desktop">O sistema de grid do Bulma é flexível e ideal para criar layouts responsivos. Com a classe columns, você pode dividir o espaço em colunas que se ajustam automaticamente ao tamanho da tela. A classe column permite personalizar o tamanho e o comportamento de cada coluna, garantindo uma boa visualização em dispositivos mobile e desktop.</p>
-                    </div>
-                    <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
-                        <button class="button is-info has-text-white"
-                        id="activeButton2">Leia Mais</button>
-                        <img src="src/assets/contorno-de-blocos-quadrados.png" alt=""
-                        class="image is-64x64">
-                    </div>
-                </div>
-
-                <!-- MODAL MEMBRO 2 -->
-
-                <div class="modal openModal"
-                id="modal2">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head has-background-light">
-                            <div class="has-background-info has-text-info">-</div>
-                            <p class="modal-card-title has-text-grey-dark pl-5 has-text-weight-bold">Sistema de Grid</p>
-                        </header>
-                        <section class="modal-card-body has-background-white has-text-grey-dark has-text-justified">
-                            <div class="has-background-white has-text-grey-dark">
-                                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Smart Grid</h1>
-                                <p class="pb-4">"Uma grade 2D inteligente com colunas flexíveis". Este grid é um componente de layout bidimensional que apresenta  flexible columns(colunas flexíveis): Caberá o maior número possível de colunas, dada uma largura mínima de coluna e uma lacuna de coluna e linha.</p>
-                                <p class="is-size-5 pb-3 has-text-weight-semibold">Por padrão, o Smart Grid tem:</p>
-                                <p class="pb-4">
-                                ♦ Uma largura mínima de coluna de 9rem<br>
-                                ♦ Uma lacuna de 0.75rem</p>
-
-                                <p class="is-size-5 pb-3 has-text-weight-semibold">◊ Modificadores de Smart Grid ◊</p>
-                                <p>
-                                Você pode alterar a largura mínima da coluna em incrementos adicionando a classe modificadora com um valor que varia de: value de 1.5rem á 48.0rem e Class is-col-min de 1 até 32</p><br>
-                            </div>
-                            <div>
-                                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Fixed Grid</h1>
-                                <p>"Uma grade fixa 2D personalizável". Se, em vez de ter uma largura mínima de coluna, você quiser um número fixo de colunas, envolva sua grade em um contêiner.</p><br>
-                            </div>
-                            
-                            <div class="pb-4">
-                                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Grid Cells</h1>
-                                <p class="pb-2">"Ajuste a largura e a altura de cada célula individual". Cada Grid é composta por várias células. Você pode ajustar a largura e a altura de cada uma dessas células individualmente e para cada ponto de interrupção separado. </p> 
-                                <div class="box">
-                                    <h2 class="has-text-weight-semibold is-size-5">Início da coluna:</h2>
-                                    <p class="pb-2">"is-col-start" Altere em qual coluna uma célula começa.</p> 
-                                    
-                                    <h2 class="has-text-weight-semibold is-size-5">Coluna do final:</h2>
-                                    <p class="pb-2">"is-col-from-end" Altere em qual coluna uma célula termina, contando a partir do final.</p> 
-                                    
-                                    <h2 class="has-text-weight-semibold is-size-5">Extensão da coluna:</h2>
-                                    <p class="pb-2">"is-col-span" Altere quantas colunas uma célula abrange.</p> 
-
-                                    <h2 class="has-text-weight-semibold is-size-5">Início da linha:</h2>
-                                    <p class="pb-2">"is-row-start" Altere em qual linha uma célula começa.</p> 
-
-                                    <h2 class="has-text-weight-semibold is-size-5">Linha do final:</h2>
-                                    <p class="pb-2">"is-row-from-end" Altere em qual linha uma célula termina, contando a partir do final.</p> 
-
-                                    <h2 class="has-text-weight-semibold is-size-5">Extensão de linha:</h2>
-                                    <p class="pb-2">"is-row-span" Altere quantas linhas uma célula abrange.</p>
-                                </div>
-                                
-                                
-                            </div>
-                            
-                        </section>
-                        <footer class="modal-card-foot has-background-white">
-                            <div class="buttons">
-                            
-                            <button class="button is-info has-text-white" id="closeBnt2">Fechar</button>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pb-6 is-fullwidth is-flex">
-                <span style="border: ridge 1px lightgray; width: 100%;"></span>
-            </div>
-
-            <!-- CODIGO - NÓBREGA -->
-            
-            <div class="is-flex pb-6">
-                <div class="has-background-warning is-fullwidth has-text-warning">-</div>
-                <div class="hero is-shadowless">
-                    <div class="hero-body is-flex is-flex-direction-column">
-                        <h1 class="title is-4 has-text-left has-text-grey-darker">Variedade e Personalização de Botões</h1>
-                        <p class="has-text-grey-dark is-size-5-desktop">No Bulma, os botões são fáceis de personalizar e implementar. Com várias classes, é possível ajustar cor, tamanho e estilo, criando botões primários, de alerta e links. Eles também podem incluir ícones, facilitando a interação do usuário e destacando ações importantes no site.</p>
-                    </div>
-                    <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
-                        <button class="button is-warning has-text-white"
-                        id="activeButton3">Leia Mais</button>
-                        <img src="src/assets/botao-de-desligar.png" alt=""
-                        class="image is-64x64">
-                    </div>
-                </div>
-
-                <!-- MODAL MEMBRO 3 -->
-
-                <div class="modal openModal"
-                id="modal3">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head has-background-light">
-                            <div class="has-background-warning has-text-warning">-</div>
-                            <p class="modal-card-title has-text-grey-dark pl-5">Modal title</p>
-                        </header>
-                        <section class="modal-card-body has-background-white">
-                            <h2 class="subtitle">Botões Primários e Secundários</h2>
-                            <p>O Bulma oferece botões prontos com estilos variados, como botões primários e secundários, que podem ser definidos usando as classes <code>is-primary</code> e <code>is-secondary</code>:</p>
-                            <div class="buttons">
-                                <button class="button is-primary">Botão Primário</button>
-                                <button class="button is-link">Botão Secundário</button>
-                            </div>
-                            
-                            <!-- Subtítulo 2: Tamanhos de Botões -->
-                            <h2 class="subtitle">Tamanhos de Botões</h2>
-                            <p>Os botões podem ser redimensionados usando as classes <code>is-small</code>, <code>is-normal</code>, <code>is-medium</code> e <code>is-large</code>:</p>
-                            <div class="buttons">
-                                <button class="button is-small is-primary">Pequeno</button>
-                                <button class="button is-primary">Normal</button>
-                                <button class="button is-medium is-primary">Médio</button>
-                                <button class="button is-large is-primary">Grande</button>
-                            </div>
-                            
-                            <!-- Subtítulo 3: Botões com Ícones -->
-                            <h2 class="subtitle">Botões com Ícones</h2>
-                            <p>É possível adicionar ícones aos botões para melhorar a experiência do usuário. Aqui está um exemplo com a classe <code>icon</code>:</p>
-                            <div class="buttons">
-                                <button class="button is-primary">
-                                <span class="icon">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span>Confirmar</span>
-                                </button>
-                                <button class="button is-danger">
-                                <span class="icon">
-                                    <i class="fas fa-times"></i>
-                                </span>
-                                <span>Cancelar</span>
-                                </button>
-                            </div>
-                            
-                            <!-- Subtítulo 4: Botões de Cores e Estados -->
-                            <h2 class="subtitle">Botões de Cores e Estados</h2>
-                            <p>O Bulma permite várias cores de botão, como <code>is-success</code>, <code>is-danger</code>, e <code>is-warning</code>, além de estados como <code>is-loading</code>:</p>
-                            <div class="buttons">
-                                <button class="button is-success">Sucesso</button>
-                                <button class="button is-danger">Erro</button>
-                                <button class="button is-warning">Aviso</button>
-                                <button class="button is-info is-loading">Carregando</button>
-                            </div>
-                        </section>
-                        <footer class="modal-card-foot has-background-white">
-                            <div class="buttons">                  
-                                <button class="button is-warning has-text-white" id="closeBnt3">Fechar</button>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pb-6 is-fullwidth is-flex">
-                <span style="border: ridge 1px lightgray; width: 100%;"></span>
-            </div>
-
-            <!-- CODIGO - GUSTAVO -->
-
-            <div class="is-flex pb-6">
-                <div class="has-background-danger is-fullwidth has-text-danger">-</div>
-                <div class="hero is-shadowless">
-                    <div class="hero-body is-flex is-flex-direction-column">
-                        <h1 class="title is-4 has-text-left has-text-grey-darker">Criação e Estilização de Formulários</h1>
-                        <p class="has-text-grey-dark is-size-5-desktop">O Bulma facilita a criação de formulários com componentes como campos de texto, checkboxes e botões, todos estilizados com classes específicas. Ele oferece opções de personalização para largura, alinhamento e responsividade, garantindo uma experiência agradável em qualquer dispositivo.</p>
-                    </div>
-                    <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
-                        <button class="button is-danger has-text-white"
-                        id="activeButton4">Leia Mais</button>
-                        <img src="src/assets/formularios-google.png" alt=""
-                        class="image is-64x64">
-                    </div>
-                </div>
-
-                <!-- MODAL MEMBRO 4 -->
-
-                <div class="modal openModal"
-                id="modal4">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head has-background-light">
-                            <div class="has-background-danger has-text-danger">-</div>
-                            <p class="modal-card-title has-text-grey-dark pl-5">Formulários</p>
-                        </header>
-                        <section class="modal-card-body has-background-white">
-                            <div class="field">
-                                <label class="label">Nome</label>
-                                <div class="control">
-                                  <input class="input is-rounded" type="text" placeholder="Text input">
-                                </div>
-                              </div>
-                              
-                              <div class="field">
-                                <label class="label">Nome de usuário</label>
-                                <div class="control has-icons-left has-icons-right">
-                                  <input class="input is-large is-success" type="text" placeholder="Text input" value="bulma">
-                                  <span class="icon is-small is-left">
-                                    <i class="fas fa-user"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i class="fas fa-check"></i>
-                                  </span>
-                                </div>
-                                <p class="help is-success">This username is available</p>
-                              </div>
-                              
-                              <div class="field">
-                                <label class="label">Email</label>
-                                <div class="control has-icons-left has-icons-right">
-                                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-                                  <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                  </span>
-                                </div>
-                                <p class="help is-danger">This email is invalid</p>
-                              </div>
-                              
-                              <div class="field">
-                                <label class="label">País</label>
-                                <div class="control">
-                                  <div class="select">
-                                    <select>
-                                      <option>Brasil</option>
-                                      <option>Alemanha</option>
-                                      <option>Egito</option>
-                                      <option>Rússia</option>
-                                      <option>Japão</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                              <div class="field">
-                                <label class="label">Mensagem</label>
-                                <div class="control">
-                                  <textarea class="textarea is-small is-danger" placeholder="Textarea"></textarea>
-                                </div>
-                              </div>
-                              
-                              <div class="field">
-                                <div class="control">
-                                  <label class="checkbox ">
-                                    <input type="checkbox">
-                                    I agree to the <a href="#">terms and conditions</a>
-                                  </label>
-                                </div>
-                              </div>
-                              
-                              <div class="field">
-                                <div class="control">
-                                  <label class="radio">
-                                    <input type="radio" name="question">
-                                    Yes
-                                  </label>
-                                  <label class="radio">
-                                    <input type="radio" name="question">
-                                    No
-                                  </label>
-                                </div>
-                              </div>
-                              
-                              <div class="field is-grouped">
-                                <div class="control">
-                                  <button class="button is-link">Submit</button>
-                                </div>
-                                <div class="control">
-                                  <button class="button is-large is-link is-light">Cancel</button>
-                                </div>
-
-                        </section>
-                        <footer class="modal-card-foot has-background-white">
-                            <div class="buttons">                  
-                                <button class="button is-danger has-text-white" id="closeBnt4">Fechar</button>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pb-6 is-fullwidth is-flex">
-                <span style="border: ridge 1px lightgray; width: 100%;"></span>
-            </div>
-
-            <!-- CODIGO - NÓBREGA -->
-
-            <div class="is-flex pb-6">
-                <div class="has-background-link is-fullwidth has-text-link">-</div>
-                <div class="hero is-shadowless">
-                    <div class="hero-body is-flex is-flex-direction-column">
-                        <h1 class="title is-4 has-text-left has-text-grey-darker">Apresentando Cartões com Estilo</h1>
-                        <p class="has-text-grey-dark is-size-5-desktop">O componente de cartões do Bulma é ideal para exibir conteúdos como artigos e produtos, com imagem, título, texto e botões. Flexíveis e responsivos, os cartões se adaptam a diversos layouts, oferecendo uma apresentação limpa e organizada.</p>
-                    </div>
-                    <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
-                        <button class="button has-background-link has-text-white"
-                        style="border: none;"
-                        id="activeButton5">Leia Mais</button>
-                        <img src="src/assets/dialogo.png" alt=""
-                        class="image is-64x64">
-                    </div>
-                </div>
-
-                <!-- MODAL MEMBRO 5 -->
-
-                <div class="modal openModal"
-                id="modal5">
-                    <div class="modal-background"></div>
-                    <div class="modal-card">
-                        <header class="modal-card-head has-background-light">
-                            <div class="has-background-link has-text-link">-</div>
-                            <p class="modal-card-title has-text-grey-dark pl-5">Modal title</p>
-                        </header>
-                        <section class="modal-card-body has-background-white">
-                            <!-- Subtítulo 1: Estrutura Básica de um Cartão -->
-                              <h2 class="subtitle">Estrutura Básica de um Cartão</h2>
-                              <p>O Bulma oferece um componente de cartão que é muito fácil de usar. A estrutura básica inclui <code>card</code>, <code>card-content</code> e <code>card-footer</code> para separar o conteúdo e as ações:</p>
-                              <div class="card">
-                                <div class="card-content">
-                                  <p class="title">Título do Cartão</p>
-                                  <p class="content">Este é o conteúdo principal do cartão.</p>
-                                </div>
-                                <footer class="card-footer">
-                                  <p class="card-footer-item">Ação 1</p>
-                                  <p class="card-footer-item">Ação 2</p>
-                                </footer>
-                              </div>
-                              
-                              <!-- Subtítulo 2: Cartão com Imagem -->
-                              <h2 class="subtitle">Cartão com Imagem</h2>
-                              <p>É possível adicionar uma imagem ao cartão para dar destaque visual. A classe <code>card-image</code> permite incluir uma imagem na parte superior:</p>
-                              <div class="card">
-                                <div class="card-image">
-                                  <figure class="image is-4by3">
-                                    <img src="https://via.placeholder.com/300x225" alt="Imagem do Cartão">
-                                  </figure>
-                                </div>
-                                <div class="card-content">
-                                  <p class="title">Cartão com Imagem</p>
-                                  <p class="content">Esse cartão inclui uma imagem como destaque visual.</p>
-                                </div>
-                              </div>
-                              
-                              <!-- Subtítulo 3: Cartão com Ícones de Ação -->
-                              <h2 class="subtitle">Cartão com Ícones de Ação</h2>
-                              <p>O Bulma permite incluir ícones nas ações do cartão usando a classe <code>icon</code>. Aqui está um exemplo com ícones para facilitar a interação do usuário:</p>
-                              <div class="card">
-                                <div class="card-content">
-                                  <p class="title">Cartão com Ações</p>
-                                  <p class="content">Este cartão possui ícones no rodapé para ações rápidas.</p>
-                                </div>
-                                <footer class="card-footer">
-                                  <a href="#" class="card-footer-item">
-                                    <span class="icon"><i class="fas fa-thumbs-up"></i></span> Like
-                                  </a>
-                                  <a href="#" class="card-footer-item">
-                                    <span class="icon"><i class="fas fa-share"></i></span> Share
-                                  </a>
-                                </footer>
-                              </div>
-                              
-                              <!-- Subtítulo 4: Cartão Responsivo -->
-                              <h2 class="subtitle">Cartão Responsivo</h2>
-                              <p>Os cartões do Bulma são naturalmente responsivos, mas você pode personalizar o tamanho das imagens e do conteúdo para se ajustar a diferentes dispositivos. Por exemplo:</p>
-                              <div class="card is-mobile">
-                                <div class="card-image">
-                                  <figure class="image is-16by9">
-                                    <img src="https://via.placeholder.com/300x169" alt="Imagem Responsiva">
-                                  </figure>
-                                </div>
-                                <div class="card-content">
-                                  <p class="title">Cartão Responsivo</p>
-                                  <p class="content">Este cartão ajusta sua imagem para dispositivos menores.</p>
-                                </div>
-                              </div>
-                        </section>
-                        <footer class="modal-card-foot has-background-white">
-                            <div class="buttons">                  
-                                <button class="button has-background-link has-text-white" id="closeBnt5"
-                                style="border: none;">Fechar</button>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-            
-            
-
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="content has-text-centered">
-          <div>
-            <h1 class="is-size-4 is-size-3-desktop">PARTICIPANTES</h1>
-          </div>
-          <div class="box container is-flex is-justify-content-space-around git-contain">
-            <a href="https://github.com/LeviDLima1" class="git-levi"><img src="src/assets/footer/Levi.jpg" alt="" class="image is-64x64"></a>
-            <a href="https://github.com/karimecaldas" class="git-nobrega"><img src="src/assets/footer/Nóbrega.jpeg" alt="" class="image is-64x64"></a>
-            <a href="https://github.com/VetoNS23" class="git-everton"><img src="src/assets/footer/Everton.jpeg" alt="" class="image is-64x64"></a>
-            <a href="https://github.com/GustavoAlexandreD" class="git-gustavo"><img src="src/assets/footer/Gustavo.jpeg" alt="" class="image is-64x64"></a>
           </div>
         </div>
-      </footer>
-      <script src="src/js/index.js"></script>
+        
+
+        <!-- MODAL MEBRO 1 -->
+
+        <div class="modal openModal" id="modal1">
+          <div class="modal-background" id="OutlineModal"></div>
+          <div class="modal-card">
+            <header class="modal-card-head has-background-light">
+              <div class="has-background-success has-text-success">-</div>
+              <p class="modal-card-title has-text-grey-dark has-text-weight-bold pl-5 is-size-5">Implementação do Bulma
+                CSS</p>
+            </header>
+            <section class="modal-card-body has-background-white">
+              <div class="">
+                <div class="pb-4">
+                  <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Como
+                    Instalar o Bulma via CDN</h2>
+                  <p class="has-text-grey-dark has-text-justified">A maneira mais rápida de usar o Bulma é através de um
+                    link CDN. Basta adicionar o link no
+
+                    <head> do HTML, e as classes do Bulma ficam disponíveis. Ideal para projetos simples e testes
+                      rápidos. Exemplo:
+                  </p>
+                </div>
+                <div class="pb-4">
+                  <article class="message is-dark">
+                    <div class="message-header">
+                      <p>Instalação via LINK</p>
+                      <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body is-flex is-justify-content-center">
+                      <p>
+                        <img src="src/assets/modal1/link-install.png" alt="">
+                      </p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="py-5 is-fullwidth is-flex">
+                  <span style="border: ridge 1px lightgray; width: 100%;"></span>
+                </div>
+
+                <div class="pb-4">
+                  <div class="pb-4">
+                    <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">
+                      Instalando o Bulma via npm</h2>
+                    <p class="has-text-grey-dark has-text-justified">Para projetos maiores, instalar o Bulma com npm
+                      permite gerenciar dependências e facilita atualizações. Use o comando abaixo no terminal para
+                      instalar:</p>
+                  </div>
+                  <article class="message is-dark">
+                    <div class="message-header">
+                      <p>Instalação via NPM</p>
+                      <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body is-flex is-justify-content-center">
+                      <p>
+                        <img src="src/assets/modal1/npm-install.png" alt="">
+                      </p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="py-5 is-fullwidth is-flex">
+                  <span style="border: ridge 1px lightgray; width: 100%;"></span>
+                </div>
+
+                <div class="pb-4">
+                  <div class="pb-4">
+                    <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Estrutura
+                      Básica de um Projeto com Bulma</h2>
+                    <p class="has-text-grey-dark has-text-justified">Após a instalação, você pode aplicar as classes do
+                      Bulma diretamente nos elementos HTML para estilização rápida. Por exemplo, uma navbar básica pode
+                      ser criada assim:</p>
+                  </div>
+                  <article class="message is-dark">
+                    <div class="message-header">
+                      <p>Classificação</p>
+                      <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body is-flex is-justify-content-center">
+                      <p>
+                        <img src="src/assets/modal1/Estrutura-Basica.png" alt="">
+                      </p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="py-5 is-fullwidth is-flex">
+                  <span style="border: ridge 1px lightgray; width: 100%;"></span>
+                </div>
+
+                <div class="pb-4">
+                  <div class="pb-4">
+                    <h2 class="is-size-5 has-text-grey-darker has-text-centered has-text-weight-semibold pb-4">Estrutura
+                      de Pastas ao Usar Bulma com npm</h2>
+                    <p class="has-text-grey-dark has-text-justified">Ao usar Bulma com npm, organize o projeto em
+                      pastas, como css ou sass, para manter os arquivos do Bulma e os estilos personalizados juntos.
+                      Isso torna o código mais organizado e facilita futuras modificações.</p>
+                  </div>
+                </div>
+
+                <div class="py-5 is-fullwidth is-flex">
+                  <span style="border: ridge 1px lightgray; width: 100%;"></span>
+                </div>
+
+                <div class="hero is-flex">
+                  <div class="hero-body is-flex">
+                    <img src="src/assets/modal1/carrocho.gif" alt="" style="width: 33.333%;">
+                    <img src="src/assets/modal1/eslequeto.gif" alt="" style="width: 33.333%;">
+                    <img src="src/assets/modal1/carrocho2.gif" alt="" style="width: 33.333%;">
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <footer class="modal-card-foot has-background-white">
+              <div class="buttons">
+
+                <button class="button is-success has-text-white" id="closeBnt1">Fechar</button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-6 is-fullwidth is-flex">
+        <span style="border: ridge 1px lightgray; width: 100%;"></span>
+      </div>
+
+      <!-- CODIGO - EVERTON -->
+
+      <div class="is-flex pb-6 ">
+        <div class="animate-left is-flex">
+          <div class="has-background-info is-fullwidth has-text-info">-</div>
+          <div class="hero is-shadowless">
+            <div class="hero-body is-flex is-flex-direction-column">
+              <h1 class="title is-4 has-text-left has-text-grey-darker">Sistema de Grid</h1>
+              <p class="has-text-grey-dark is-size-5-desktop">O sistema de grid do Bulma é flexível e ideal para criar
+                layouts responsivos. Com a classe columns, você pode dividir o espaço em colunas que se ajustam
+                automaticamente ao tamanho da tela. A classe column permite personalizar o tamanho e o comportamento de
+                cada coluna, garantindo uma boa visualização em dispositivos mobile e desktop.</p>
+            </div>
+            <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
+              <button class="button is-info has-text-white" id="activeButton2">Leia Mais</button>
+              <img src="src/assets/contorno-de-blocos-quadrados.png" alt="" class="image is-64x64">
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- MODAL MEMBRO 2 -->
+
+        <div class="modal openModal" id="modal2">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head has-background-light">
+              <div class="has-background-info has-text-info">-</div>
+              <p class="modal-card-title has-text-grey-dark pl-5 has-text-weight-bold">Sistema de Grid</p>
+            </header>
+            <section class="modal-card-body has-background-white has-text-grey-dark has-text-justified">
+              <div class="has-background-white has-text-grey-dark">
+                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Smart Grid</h1>
+                <p class="pb-4">"Uma grade 2D inteligente com colunas flexíveis". Este grid é um componente de layout
+                  bidimensional que apresenta flexible columns(colunas flexíveis): Caberá o maior número possível de
+                  colunas, dada uma largura mínima de coluna e uma lacuna de coluna e linha.</p>
+                <p class="is-size-5 pb-3 has-text-weight-semibold">Por padrão, o Smart Grid tem:</p>
+                <p class="pb-4">
+                  ♦ Uma largura mínima de coluna de 9rem<br>
+                  ♦ Uma lacuna de 0.75rem</p>
+
+                <p class="is-size-5 pb-3 has-text-weight-semibold">◊ Modificadores de Smart Grid ◊</p>
+                <p>
+                  Você pode alterar a largura mínima da coluna em incrementos adicionando a classe modificadora com um
+                  valor que varia de: value de 1.5rem á 48.0rem e Class is-col-min de 1 até 32</p><br>
+              </div>
+              <div>
+                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Fixed Grid</h1>
+                <p>"Uma grade fixa 2D personalizável". Se, em vez de ter uma largura mínima de coluna, você quiser um
+                  número fixo de colunas, envolva sua grade em um contêiner.</p><br>
+              </div>
+
+              <div class="pb-4">
+                <h1 class="is-size-5 has-text-weight-semibold is-size-4-desktop pb-4">√ Grid Cells</h1>
+                <p class="pb-2">"Ajuste a largura e a altura de cada célula individual". Cada Grid é composta por várias
+                  células. Você pode ajustar a largura e a altura de cada uma dessas células individualmente e para cada
+                  ponto de interrupção separado. </p>
+                <div class="box">
+                  <h2 class="has-text-weight-semibold is-size-5">Início da coluna:</h2>
+                  <p class="pb-2">"is-col-start" Altere em qual coluna uma célula começa.</p>
+
+                  <h2 class="has-text-weight-semibold is-size-5">Coluna do final:</h2>
+                  <p class="pb-2">"is-col-from-end" Altere em qual coluna uma célula termina, contando a partir do
+                    final.</p>
+
+                  <h2 class="has-text-weight-semibold is-size-5">Extensão da coluna:</h2>
+                  <p class="pb-2">"is-col-span" Altere quantas colunas uma célula abrange.</p>
+
+                  <h2 class="has-text-weight-semibold is-size-5">Início da linha:</h2>
+                  <p class="pb-2">"is-row-start" Altere em qual linha uma célula começa.</p>
+
+                  <h2 class="has-text-weight-semibold is-size-5">Linha do final:</h2>
+                  <p class="pb-2">"is-row-from-end" Altere em qual linha uma célula termina, contando a partir do final.
+                  </p>
+
+                  <h2 class="has-text-weight-semibold is-size-5">Extensão de linha:</h2>
+                  <p class="pb-2">"is-row-span" Altere quantas linhas uma célula abrange.</p>
+                </div>
+              </div>
+            </section>
+            <footer class="modal-card-foot has-background-white">
+              <div class="buttons">
+                <button class="button is-info has-text-white" id="closeBnt2">Fechar</button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-6 is-fullwidth is-flex">
+        <span style="border: ridge 1px lightgray; width: 100%;"></span>
+      </div>
+
+      <!-- CODIGO - NÓBREGA -->
+
+      <div class="is-flex pb-6">
+        <div class="animate-left is-flex">
+          <div class="has-background-warning is-fullwidth has-text-warning">-</div>
+          <div class="hero is-shadowless">
+            <div class="hero-body is-flex is-flex-direction-column">
+              <h1 class="title is-4 has-text-left has-text-grey-darker">Variedade e Personalização de Botões</h1>
+              <p class="has-text-grey-dark is-size-5-desktop">No Bulma, os botões são fáceis de personalizar e
+                implementar. Com várias classes, é possível ajustar cor, tamanho e estilo, criando botões primários, de
+                alerta e links. Eles também podem incluir ícones, facilitando a interação do usuário e destacando ações
+                importantes no site.</p>
+            </div>
+            <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
+              <button class="button is-warning has-text-white" id="activeButton3">Leia Mais</button>
+              <img src="src/assets/botao-de-desligar.png" alt="" class="image is-64x64">
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- MODAL MEMBRO 3 -->
+
+        <div class="modal openModal" id="modal3">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head has-background-light">
+              <div class="has-background-warning has-text-warning">-</div>
+              <p class="modal-card-title has-text-grey-dark pl-5">Variedade e Personalização de Botões</p>
+            </header>
+            <section class="modal-card-body has-background-white">
+              <p class="has-text-grey-dark pb-4">A página sobre botões no Bulma oferece uma visão completa sobre estilos
+                e funcionalidades para customização. Ela cobre botões básicos e avançados, explicando classes para tipos
+                específicos (is-primary, is-link, is-danger, etc.), tamanhos (is-small, is-medium, is-large), e
+                variações para estado (carregando, desabilitado). Além disso, inclui opções para botões com ícones, em
+                diferentes alinhamentos e combinações. A documentação detalha ainda como usar espaçamento e agrupamentos
+                para criar interfaces mais dinâmicas.</p>
+              <div class="buttons">
+                <button class="button is-primary is-light">Primary</button>
+                <button class="button is-link is-light">Link</button>
+              </div>
+
+              <div class="buttons">
+                <button class="button is-info is-light">Info</button>
+                <button class="button is-success is-light">Success</button>
+                <button class="button is-warning is-light">Warning</button>
+                <button class="button is-danger is-light">Danger</button>
+              </div>
+            </section>
+            <footer class="modal-card-foot has-background-white">
+              <div class="buttons">
+                <button class="button is-warning has-text-white" id="closeBnt3">Fechar</button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-6 is-fullwidth is-flex">
+        <span style="border: ridge 1px lightgray; width: 100%;"></span>
+      </div>
+
+      <!-- CODIGO - GUSTAVO -->
+
+      <div class="is-flex pb-6">
+        <div class="animate-left is-flex">
+          <div class="has-background-danger is-fullwidth has-text-danger">-</div>
+          <div class="hero is-shadowless">
+            <div class="hero-body is-flex is-flex-direction-column">
+              <h1 class="title is-4 has-text-left has-text-grey-darker">Criação e Estilização de Formulários</h1>
+              <p class="has-text-grey-dark is-size-5-desktop">O Bulma facilita a criação de formulários com componentes
+                como campos de texto, checkboxes e botões, todos estilizados com classes específicas. Ele oferece opções
+                de personalização para largura, alinhamento e responsividade, garantindo uma experiência agradável em
+                qualquer dispositivo.</p>
+            </div>
+            <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
+              <button class="button is-danger has-text-white" id="activeButton4">Leia Mais</button>
+              <img src="src/assets/formularios-google.png" alt="" class="image is-64x64">
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- MODAL MEMBRO 4 -->
+
+        <div class="modal openModal" id="modal4">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head has-background-light">
+              <div class="has-background-danger has-text-danger">-</div>
+              <p class="modal-card-title has-text-grey-dark pl-5">Formulários</p>
+            </header>
+            <section class="modal-card-body has-background-white">
+              <div class="field">
+                <label class="label has-text-grey-dark">Nome</label>
+                <div class="control">
+                  <input class="input is-rounded" type="text" placeholder="Text input">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-grey-dark">Nome de usuário</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-large is-success" type="text" placeholder="Text input" value="bulma">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+                <p class="help is-success">This username is available</p>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-grey-dark">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-grey-dark">País</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Brasil</option>
+                      <option>Alemanha</option>
+                      <option>Egito</option>
+                      <option>Rússia</option>
+                      <option>Japão</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-grey-dark">Mensagem</label>
+                <div class="control">
+                  <textarea class="textarea is-small is-danger" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox has-text-grey-dark">
+                    <input type="checkbox">
+                    I agree to the <a href="#" class="has-text-grey-dark">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="radio has-text-grey-dark">
+                    <input type="radio" name="question">
+                    Yes
+                  </label>
+                  <label class="radio has-text-grey-dark">
+                    <input type="radio" name="question">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-large is-link is-light">Cancel</button>
+                </div>
+
+            </section>
+            <footer class="modal-card-foot has-background-white">
+              <div class="buttons">
+                <button class="button is-danger has-text-white" id="closeBnt4">Fechar</button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-6 is-fullwidth is-flex">
+        <span style="border: ridge 1px lightgray; width: 100%;"></span>
+      </div>
+
+      <!-- CODIGO - NÓBREGA -->
+
+      <div class="is-flex pb-6">
+        <div class="animate-left is-flex">
+          <div class="has-background-link is-fullwidth has-text-link">-</div>
+        <div class="hero is-shadowless">
+          <div class="hero-body is-flex is-flex-direction-column">
+            <h1 class="title is-4 has-text-left has-text-grey-darker">Apresentando Cartões com Estilo</h1>
+            <p class="has-text-grey-dark is-size-5-desktop">O componente de cartões do Bulma é ideal para exibir
+              conteúdos como artigos e produtos, com imagem, título, texto e botões. Flexíveis e responsivos, os cartões
+              se adaptam a diversos layouts, oferecendo uma apresentação limpa e organizada.</p>
+          </div>
+          <div class="hero-body is-flex is-justify-content-space-between is-align-items-center">
+            <button class="button has-background-link has-text-white" style="border: none;" id="activeButton5">Leia
+              Mais</button>
+            <img src="src/assets/dialogo.png" alt="" class="image is-64x64">
+          </div>
+        </div>
+        </div>
+        
+
+        <!-- MODAL MEMBRO 5 -->
+
+        <div class="modal openModal" id="modal5">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head has-background-light">
+              <div class="has-background-link has-text-link">-</div>
+              <p class="modal-card-title has-text-grey-dark pl-5 has-text-weight-semibold">Apresentando Cartões com
+                Estilo</p>
+            </header>
+            <section class="modal-card-body has-background-white has-text-grey-dark">
+              <!-- Subtítulo 1: Estrutura Básica de um Cartão -->
+              <h2 class="subtitle has-text-grey-dark">Estrutura Básica de um Cartão</h2>
+              <p class="pb-5">O Bulma oferece um componente de cartão que é muito fácil de usar. A estrutura básica
+                inclui <code>card</code>, <code>card-content</code> e <code>card-footer</code> para separar o conteúdo e
+                as ações:</p>
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">Título do Cartão</p>
+                  <p class="content">Este é o conteúdo principal do cartão.</p>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">Ação 1</p>
+                  <p class="card-footer-item">Ação 2</p>
+                </footer>
+              </div>
+
+              <!-- Subtítulo 2: Cartão com Imagem -->
+              <h2 class="subtitle has-text-grey-dark">Cartão com Imagem</h2>
+              <p class="pb-5">É possível adicionar uma imagem ao cartão para dar destaque visual. A classe
+                <code>card-image</code> permite incluir uma imagem na parte superior:
+              </p>
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://via.placeholder.com/300x225" alt="Imagem do Cartão">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title">Cartão com Imagem</p>
+                  <p class="content">Esse cartão inclui uma imagem como destaque visual.</p>
+                </div>
+              </div>
+
+              <!-- Subtítulo 3: Cartão com Ícones de Ação -->
+              <h2 class="subtitle has-text-grey-dark">Cartão com Ícones de Ação</h2>
+              <pa class="pb-5">O Bulma permite incluir ícones nas ações do cartão usando a classe <code>icon</code>.
+                Aqui está um exemplo com ícones para facilitar a interação do usuário:</p>
+                <div class="card">
+                  <div class="card-content">
+                    <p class="title">Cartão com Ações</p>
+                    <p class="content">Este cartão possui ícones no rodapé para ações rápidas.</p>
+                  </div>
+                  <footer class="card-footer">
+                    <a href="#" class="card-footer-item">
+                      <span class="icon"><i class="fas fa-thumbs-up"></i></span> Like
+                    </a>
+                    <a href="#" class="card-footer-item">
+                      <span class="icon"><i class="fas fa-share"></i></span> Share
+                    </a>
+                  </footer>
+                </div>
+
+                <!-- Subtítulo 4: Cartão Responsivo -->
+                <h2 class="subtitle has-text-grey-dark">Cartão Responsivo</h2>
+                <p class="pb-5">Os cartões do Bulma são naturalmente responsivos, mas você pode personalizar o tamanho
+                  das imagens e do conteúdo para se ajustar a diferentes dispositivos. Por exemplo:</p>
+                <div class="card is-mobile">
+                  <div class="card-image">
+                    <figure class="image is-16by9">
+                      <img src="https://via.placeholder.com/300x169" alt="Imagem Responsiva">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title">Cartão Responsivo</p>
+                    <p class="content">Este cartão ajusta sua imagem para dispositivos menores.</p>
+                  </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot has-background-white">
+              <div class="buttons">
+                <button class="button has-background-link has-text-white" id="closeBnt5"
+                  style="border: none;">Fechar</button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div>
+        <h1 class="is-size-4 is-size-3-desktop">PARTICIPANTES</h1>
+      </div>
+      <div class="box container is-flex is-justify-content-space-around git-contain">
+        <a href="https://github.com/LeviDLima1" class="git-levi"><img src="src/assets/footer/Levi.jpg" alt=""
+            class="image is-64x64"></a>
+        <a href="https://github.com/karimecaldas" class="git-nobrega"><img src="src/assets/footer/Nóbrega.jpeg" alt=""
+            class="image is-64x64"></a>
+        <a href="https://github.com/VetoNS23" class="git-everton"><img src="src/assets/footer/Everton.jpeg" alt=""
+            class="image is-64x64"></a>
+        <a href="https://github.com/GustavoAlexandreD" class="git-gustavo"><img src="src/assets/footer/Gustavo.jpeg"
+            alt="" class="image is-64x64"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/index.js"></script>
 </body>
+
 </html>

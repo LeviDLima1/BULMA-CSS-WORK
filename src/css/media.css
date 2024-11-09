@@ -15,13 +15,80 @@
         justify-content: center !important;
         gap: 50px;
     }
+
+    .animate-left {
+        transform: translateX(-1000px);
+        transition: transform 1200ms ease;
+    }
+    
+    .animate-left.visible {
+        transform: translateX(0);
+    }
+
+    
+
+    .git-levi.visible {
+        animation: upBallScale 1.2s forwards;
+    }
+
+    .git-everton.visible {
+        animation: upBallScale 1.2s forwards;
+    }
+
+    .git-nobrega.visible {
+
+        animation: downBallScale 1.2s forwards;
+    }
+
+    .git-gustavo.visible {
+        animation: downBallScale 1.2s forwards;
+    }
+
 }
 
 .git-contain {
-    
     img {
         border: none;
         border-radius: 100%;
     }
     
 }
+
+@keyframes upBallScale {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes downBallScale {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-card {
+    animation: scale 300ms forwards;
+}
+
+

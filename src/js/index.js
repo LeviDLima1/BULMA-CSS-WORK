@@ -92,4 +92,34 @@ OutlineModal.onclick = function() {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.animate-left');
+    const gitDirectionLevi = document.querySelectorAll('.git-levi')
+    const gitDirectionEverton = document.querySelectorAll('.git-everton')
+    const gitDirectionNobrega = document.querySelectorAll('.git-nobrega')
+    const gitDirectionGustavo = document.querySelectorAll('.git-gustavo')
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
 
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+    gitDirectionLevi.forEach(element => {
+        observer.observe(element);
+    });
+    gitDirectionEverton.forEach(element => {
+        observer.observe(element);
+    });
+    gitDirectionNobrega.forEach(element => {
+        observer.observe(element);
+    });
+    gitDirectionGustavo.forEach(element => {
+        observer.observe(element);
+    });
+});
