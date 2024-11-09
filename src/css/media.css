@@ -17,7 +17,7 @@
     }
 
     .animate-left {
-        transform: translateX(-1000px);
+        transform: translateX(-700px);
         transition: transform 1200ms ease;
     }
     
